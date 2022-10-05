@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="#">
+      <a>
         <img class="header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип Седоны">
       </a>
       <nav class="navigation">
@@ -23,15 +23,13 @@
         </ul>
         <ul class="navigation-user-list">
           <li class="navigation-user-item">
-            <!--иконка лупы через img?-->
             <a class="navigation-user-button" href="catalog.html">
-              <span class="visually-hidden">
-                <img src="images/search.svg" width="20" height="20" alt="Поиск">
-              </span>
+              <img src="images/search.svg" width="20" height="20" alt="Поиск">
+              <span class="visually-hidden number"></span>
             </a>
           </li>
           <li class="navigation-user-item">
-            <input type="image" class="navigation-user-button" img src="images/heart.svg" width="18" height="17" alt="Избранное"></input>
+            <input type="image" class="navigation-user-button" img src="images/heart.svg" width="18" height="17" alt="Избранное">
           </li>
           <li class="navigation-item">
             <a class="navigation-user-button button" href="#">Хочу сюда!</a>
@@ -46,30 +44,45 @@
         <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="advantages">
-        <!--непонятно, как пофиксить список с преимуществами-->
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="advantage-picture" src="images/sedona.jpg" width="800" height="384" alt="Городок Седона">
-          </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Небольшая площадь</h3>
-            <p class="advantages-description">Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Красивая дорога</h3>
-            <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Мало туристов</h3>
-            <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+            <ul>
+              <li class="advantages-item">
+                <h3 class="advantages-title">Небольшая площадь</h3>
+                <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+              </li>
+              <li class="advantages-item">
+                <h3 class="advantages-title">Красивая дорога</h3>
+                <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="advantages-item">
+                <h3 class="advantages-title">Мало туристов</h3>
+                <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+              </li>
+            </ul>
           </li>
           <li  class="advantages-item">
             <h3 class="advantages-title">Мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img class="advantage-picture" src="images/bridge-of-devil.jpg" width="800" height="384" alt="Фото моста дьявола">
+            <ul>
+              <li class="advantages-item">
+                <h3 class="advantages-title">Жильё</h3>
+                <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="advantages-item">
+                <h3 class="advantages-title">Еда</h3>
+                <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="advantages-item">
+                <h3 class="advantages-title">Сувениры</h3>
+                <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
+              </li>
+            </ul>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Жильё</h3>
@@ -104,17 +117,17 @@
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">VK</span>
+              <img src="images/logo-vk.svg" width="24" height="14" alt="Vk">
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Telegram</span>
+              <img src="images/logo-telegram.svg" width="18" height="15.1" alt="Telegram">
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Youtube</span>
+              <img src="images/logo-youtube.svg" width="22" height="17" alt="Youtube">
             </a>
           </li>
         </ul>
@@ -123,13 +136,17 @@
         <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <section class="copyright">
-        <a class="copyright-link" href="https://htmlacademy.ru/">.html academy</a>
+        <a class="copyright-link" href="https://htmlacademy.ru/">
+          <img src="images/logo-html-academy.svg" width="114.9" height="32.9" alt="html academy.ru">
+        </a>
       </section>
     </footer>
+    <!--модальное окно-->
     <h1>Поиск гостиницы в Седоне</h1>
     <form action="https://echo.htmlacademy.ru/courses" method="get">
       <p>
         <label for="date-of-arrival">Дата заезда</label>
+        <!--все инпуты потом поправить на type="text"-->
         <input type="date" id="date-of-arrival" name="date-of-arrival" value="2012-04-27" required>
       </p>
       <p>
@@ -140,7 +157,8 @@
       <input type="number" min="0" max="100" step="1" id="number-of-adults" name="number-of-adults" value="2" required>
       <label for="number-of-children">Дети</label>
       <input type="number" min="0" max="100" step="1" id="number-of-children" name="number-of-children" value="2" required>
-      <input type="submit" class="button" value="Найти"></input>
+      <input type="submit" class="button" value="Найти">
     </form>
+    <!--модальное окно-->
   </body>
 </html>
