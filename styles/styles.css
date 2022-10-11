@@ -57,14 +57,14 @@ header {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
-
 }
 
 /* Навигация в шапке */
 
 .navigation-user-link {
-background-color: #756157;
+  background-color: #756157;
 }
+
 .main-index {
   text-align: center;
 }
@@ -87,7 +87,8 @@ background-color: #756157;
   padding-bottom: 81px;
 }
 
-.hero h1{
+.hero-title{
+  color: #000000;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -176,7 +177,7 @@ background-color: #756157;
 
 /* Форма с подпиской на обеих страницах */
 
-.subscription-form input {
+.subscription-input {
   text-align: left;
   font-size: 18px;
   line-height: 24px;
@@ -235,8 +236,25 @@ background-color: #756157;
 .catalog-filters-list {
   color: #ffffff;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 18px;
   line-height: 23px;
+}
+
+.range-slider-input {
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-filters-submit-button {
+  background-color: #82B3D3;
+  border: none;
+}
+.catalog-filters-reset-button {
+  background-color: transparent;
+  border: none;
+
 }
 
 /* Результат поиска */
@@ -290,7 +308,7 @@ background-color: #756157;
   background-color: #756157;
 }
 
-.card-fav {
+.card-favorite {
   background-color: #82B3D3;
   border: none;
 }
