@@ -14,18 +14,40 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
   background-color: #ffffff;
+
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* Шапка главной */
 
 header {
+  display: flex;
+  width: 1200px;
+  margin: 0;
+  padding: 0px 70px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -48,6 +70,31 @@ header {
 
 /* Навигация в шапке */
 
+.navigation {
+  display: flex;
+  width: 892px;
+}
+
+.navigation-logo {
+  width: 140px;
+  margin-right: 28px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 450px;
+
+}
+
+.navigation-user-list {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  max-width: 350px;
+
+}
+
 .navigation-link {
   font-family: "PT Sans";
   font-weight: 700;
@@ -61,7 +108,7 @@ header {
 
 /* Навигация в шапке */
 
-.navigation-user-link {
+.navigation-user-button {
   background-color: #756157;
 }
 
@@ -81,18 +128,33 @@ header {
 }
 
 .hero-banner-logo {
+  display: block;
+  margin: 0 auto;
   padding-top: 51px;
   padding-right: 371px;
   padding-left: 371px;
   padding-bottom: 81px;
 }
 
-.hero-title{
+.hero-title {
   color: #000000;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  width: 620px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 69px 274px 90px 275px;
+}
+
+.hero-text {
+  width: 651px;
+  margin: 0 auto;
+  margin-top: 25px;
+
 }
 
 /* Преимущества */
@@ -102,9 +164,31 @@ header {
   line-height: 21px;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.advantages-container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 92px 85px;
+  max-width: 400px;
+}
+
 .advantages-item {
   background-color: #82B3D3;
   color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-title {
@@ -119,13 +203,24 @@ header {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
+
+.sub-advantages-item {
+  box-sizing: border-box;
+  padding: 103px 85px;
+  max-width: 400px;
+}
+
 .sub-advantages-title {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 28px;
-  color:#000000;
+  color: #000000;
 }
 
 .sub-benefits {
@@ -133,22 +228,39 @@ header {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
+
+.sub-benefits-item {
+  box-sizing: border-box;
+  padding: 80px 85px;
+  max-width: 400px;
+}
+
 .sub-benefits-title {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 28px;
-  color:#000000;
+  color: #000000;
 }
 
 /* Секция с поиском на главной */
+
+.search {
+  margin: 0;
+  padding: 96px 304px;
+}
 
 .search-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  color:#000000;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .search-link {
@@ -166,6 +278,8 @@ header {
   background-image: url("/images/sedona-background-image.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  margin: 0;
+  padding: 96px 258px;
 }
 
 .subscription-title {
@@ -183,7 +297,11 @@ header {
   line-height: 24px;
   border: none;
   background-color: #F2F2F2;
-
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .subcription-button {
@@ -195,6 +313,18 @@ header {
 
 /* Подвал на обеих страницах */
 
+.footer-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 70px 40px 30px;
+
+}
+
+.social {
+  max-width: 300px;
+}
+
 .phone-link {
   color: #000000;
   font-size: 40px;
@@ -202,7 +332,16 @@ header {
   text-decoration: none;
 }
 
+.copyright {
+  max-width: 150px;
+}
+
 /* див с шапкой каталога и фильтрами */
+
+.catalog-filters {
+  display: flex;
+  justify-content: space-between;
+}
 
 .filter-image {
   background-color: #000000;
@@ -210,6 +349,30 @@ header {
   background-repeat: no-repeat;
   background-size: 100%;
   color: #ffffff;
+  padding: 35px 70px 70px;
+}
+
+.catalog-filters-group {
+  margin: 0px;
+  margin-right: 70px;
+  border: 0;
+  padding: 0;
+}
+
+.catalog-filters-left {
+  display: flex;
+  justify-content: space-between;
+  border: 0;
+  padding: 0;
+  max-width: 50%;
+}
+
+.catalog-filters-right {
+  display: flex;
+  justify-content: space-between;
+  border: 0;
+  padding: 0;
+  max-width: 50%;
 }
 
 .inner-header-title {
@@ -251,6 +414,7 @@ header {
   background-color: #82B3D3;
   border: none;
 }
+
 .catalog-filters-reset-button {
   background-color: transparent;
   border: none;
@@ -258,6 +422,17 @@ header {
 }
 
 /* Результат поиска */
+
+.catalog {
+  padding: 50px 70px 60px;
+  margin: 0;
+}
+
+.filter-result-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
 
 .filter-result {
   color: #000000;
@@ -271,6 +446,7 @@ header {
 /*Отобразить как*/
 
 .select-control {
+  font-family: "PT Sans", sans-serif;
   color: #333333;
   font-weight: 400;
   font-size: 18px;
@@ -279,6 +455,12 @@ header {
 }
 
 /*Карточки*/
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
 
 .card-link {
   text-decoration: none;
@@ -326,6 +508,11 @@ header {
 }
 
 /* Пагинация */
+.pagination {
+  display: flex;
+  justify-content: start;
+}
+
 .pagination-item {
   color: #000000;
 }
@@ -338,6 +525,8 @@ header {
   line-height: 36px;
   text-align: center;
   text-decoration: none;
+  width: 60px;
+  height: 60px;
 }
 
 .pagination-current {
@@ -345,10 +534,17 @@ header {
   color: #000000;
 }
 
+li:nth-child(6) .pagination-link {
+  background-color: #ffffff;
+  color: #000000
+}
+
 /* Секция с подпиской в каталоге */
 
 .subscription-catalog {
   text-align: center;
+  margin: 0;
+  padding: 96px 258px;
 }
 
 .subscription-catalog-title {
