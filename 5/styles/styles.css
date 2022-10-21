@@ -196,6 +196,11 @@ header {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 28px;
+  margin-top: 0;
+}
+
+.advantages-description {
+  margin-top: 0;
 }
 
 .sub-advantages {
@@ -221,6 +226,11 @@ header {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin-top: 0;
+}
+
+.sub-advantages-description {
+  margin-top: 0;
 }
 
 .sub-benefits {
@@ -246,6 +256,11 @@ header {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin-top: 0;
+}
+
+.sub-benefits-description {
+  margin-top: 0;
 }
 
 /* Секция с поиском на главной */
@@ -423,15 +438,10 @@ header {
 
 /* Результат поиска */
 
-.catalog {
-  padding: 50px 70px 60px;
-  margin: 0;
-}
-
 .filter-result-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  padding: 50px 70px;
 }
 
 .filter-result {
@@ -460,6 +470,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-content: stretch;
+  border: 40px 70px;
 }
 
 .card-link {
@@ -534,7 +545,7 @@ header {
   color: #000000;
 }
 
-li:nth-child(6) .pagination-link {
+.pagination-item:nth-child(6) .pagination-link {
   background-color: #ffffff;
   color: #000000
 }
