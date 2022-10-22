@@ -271,11 +271,16 @@ header {
 }
 
 .search-title {
+  margin-top: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.search-text {
+  margin-top: 0;
 }
 
 .search-link {
@@ -298,10 +303,15 @@ header {
 }
 
 .subscription-title {
+  margin-top: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.subscription-text {
+  margin-top: 0;
 }
 
 /* Форма с подпиской на обеих страницах */
@@ -478,6 +488,7 @@ header {
 }
 
 .card-title {
+  margin-top: 0;
   color: #000000;
   font-weight: 700;
   font-size: 24px;
@@ -485,6 +496,7 @@ header {
 }
 
 .card-type {
+  margin-top: 0;
   font-size: 18px;
   line-height: 21px;
   text-align: left;
@@ -559,9 +571,14 @@ header {
 }
 
 .subscription-catalog-title {
+  margin-top: 0;
   color: #000000;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.subscription-catalog-text {
+  margin-top: 0;
 }
