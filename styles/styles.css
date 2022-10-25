@@ -32,6 +32,17 @@ body {
 
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-container {
   margin: 0 auto;
   width: 1200px;
@@ -45,6 +56,7 @@ body {
 
 header {
   display: flex;
+  box-sizing: border-box;
   width: 1200px;
   margin: 0;
   padding: 0px 70px;
@@ -66,6 +78,9 @@ header {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  padding;
+  8px auto;
+  margin: 0;
 }
 
 /* Навигация в шапке */
@@ -81,21 +96,27 @@ header {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 450px;
+  list-style-type: none;
+  max-width: 500px;
 
 }
 
 .navigation-user-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-left: auto;
   max-width: 350px;
-
+  list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
@@ -104,6 +125,16 @@ header {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+  padding: 20px 16px;
+}
+
+.navigation-user-link {
+  display: block;
+  padding: 22px 12px;
+}
+
+.navigation-user-button {
+  align-self: flex-end;
 }
 
 /* Навигация в шапке */
@@ -130,10 +161,7 @@ header {
 .hero-banner-logo {
   display: block;
   margin: 0 auto;
-  padding-top: 51px;
-  padding-right: 371px;
-  padding-left: 371px;
-  padding-bottom: 81px;
+  padding: 51px 371px 81px 371px;
 }
 
 .hero-title {
@@ -142,18 +170,19 @@ header {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  width: 620px;
-  margin: 0 auto;
-}
-
-.hero {
-  padding: 69px 274px 90px 275px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding: 0;
 }
 
 .hero-text {
-  width: 651px;
-  margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.hero {
+  margin: 69px 200px;
+  padding: 0;
 
 }
 
@@ -171,6 +200,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
+  list-style-type: none;
 }
 
 .advantages-container {
@@ -196,22 +226,26 @@ header {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 28px;
-  margin-top: 0;
+  margin: 0 auto 62px;
+  max-width: 175px;
+  text-align: center;
 }
 
 .advantages-description {
   margin-top: 0;
 }
 
-.sub-advantages {
+.sub-advantages-list {
   background-color: #83B3D3;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .sub-advantages-item {
@@ -226,22 +260,26 @@ header {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  margin-top: 0;
+  margin: 0 auto 62px;
+  max-width: 175px;
+
 }
 
 .sub-advantages-description {
   margin-top: 0;
 }
 
-.sub-benefits {
+.sub-benefits-list {
   background-color: #83B3D3;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .sub-benefits-item {
@@ -256,7 +294,8 @@ header {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  margin-top: 0;
+  margin: 0 auto 30px;
+  padding: 0;
 }
 
 .sub-benefits-description {
@@ -271,7 +310,7 @@ header {
 }
 
 .search-title {
-  margin-top: 0;
+  margin: 0 auto 20px auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -340,14 +379,24 @@ header {
 
 .footer-container {
   display: flex;
-  margin: 0 auto;
   justify-content: space-between;
-  padding: 70px 40px 30px;
-
+  padding: 0;
+  margin: 40px 70px;
 }
 
-.social {
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 300px;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.social-link {
+  margin: 0;
+  padding: 0 10px;
 }
 
 .phone-link {
@@ -365,6 +414,7 @@ header {
 
 .catalog-filters {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -374,7 +424,8 @@ header {
   background-repeat: no-repeat;
   background-size: 100%;
   color: #ffffff;
-  padding: 35px 70px 70px;
+  padding: 35px 70px;
+  margin: 0;
 }
 
 .catalog-filters-group {
@@ -386,7 +437,7 @@ header {
 
 .catalog-filters-left {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   border: 0;
   padding: 0;
   max-width: 50%;
@@ -394,10 +445,28 @@ header {
 
 .catalog-filters-right {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   border: 0;
   padding: 0;
   max-width: 50%;
+}
+
+.catalog-filters-item {
+  margin: 0 0 16px 0;
+  padding: 0;
+}
+
+.control-input {
+  margin: 0 16px 0 0;
+}
+
+.inner-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  max-width: 1060px;
 }
 
 .inner-header-title {
@@ -405,13 +474,26 @@ header {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0 0 8px 0;
+  padding: 0;
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  margin: 0 0 40px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  margin: 0;
+  padding-right: 28px;
 }
 
 .catalog-filters-title {
@@ -419,6 +501,8 @@ header {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  padding: 0;
+  margin: 0 0 32px 0;
 }
 
 .catalog-filters-list {
@@ -426,6 +510,14 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.range-slider {
+  display: flex;
+  justify-content: space-between;
 }
 
 .range-slider-input {
@@ -433,6 +525,8 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  max-width: 143px;
+  padding: 0 2px 0 0;
 }
 
 .catalog-filters-submit-button {
@@ -461,6 +555,7 @@ header {
   line-height: 36px;
   text-transform: uppercase;
   text-align: left;
+  margin: 0;
 }
 
 /*Отобразить как*/
@@ -472,6 +567,28 @@ header {
   font-size: 18px;
   line-height: 21px;
   text-align: left;
+  width: 292px;
+}
+
+.filters-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.view-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  max-width: 160px;
+  padding: 0;
+  margin: 0;
+}
+
+.view-list-link {
+  padding: 14px 12px 14px 12px;
+  margin: 0 8px 0 0;
 }
 
 /*Карточки*/
@@ -480,7 +597,19 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-content: stretch;
-  border: 40px 70px;
+  margin: 0 70px 0 40px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: 340px;
+  padding: 20px;
+  justify-content: space-between;
+
 }
 
 .card-link {
@@ -489,17 +618,21 @@ header {
 
 .card-title {
   margin-top: 0;
+  margin-bottom: 16px;
   color: #000000;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  width: 300px;
 }
 
 .card-type {
   margin-top: 0;
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 21px;
   text-align: left;
+  width: 50%;
 }
 
 .card-price {
@@ -507,37 +640,65 @@ header {
   font-weight: 400;
   line-height: 21px;
   text-align: right;
+  width: 50%;
 }
 
 .card-button {
+  margin-top: 0;
+  margin-bottom: 16px;
   background-color: #756157;
+  box-sizing: border-box;
+  width: 140px;
+  margin-right: 20px;
 }
 
 .card-favorite {
+  margin-top: 0;
+  margin-bottom: 16px;
   background-color: #82B3D3;
   border: none;
+  box-sizing: border-box;
+  width: 140px;
+  padding: 8px auto 8px auto;
+
 }
 
 .card-stars {
   background-image: url(/images/star.svg);
   background-repeat: repeat;
+  box-sizing: border-box;
+  width: 140px;
+  margin-top: 0;
+  margin-right: 16px;
 }
 
 .card-rating {
   background-color: #F2F2F2;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  box-sizing: border-box;
+  width: 140px;
+  margin-top: 0;
 }
 
 /* Пагинация */
 .pagination {
   display: flex;
   justify-content: start;
+  list-style-type: none;
+  margin: 40px 70px 60px 60px;
+  padding: 0;
 }
 
 .pagination-item {
   color: #000000;
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
+  text-align: center;
+
 }
 
 .pagination-link {
@@ -546,10 +707,7 @@ header {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
   text-decoration: none;
-  width: 60px;
-  height: 60px;
 }
 
 .pagination-current {
@@ -557,7 +715,7 @@ header {
   color: #000000;
 }
 
-.pagination-item:nth-child(6) .pagination-link {
+.pagination-item:nth-child(5) .pagination-link {
   background-color: #ffffff;
   color: #000000
 }

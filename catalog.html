@@ -45,7 +45,7 @@
       </header>
       <main class="main-container main-inner">
         <div class="filter-image">
-          <header class="inner-header">
+          <section class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
@@ -57,10 +57,9 @@
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
-          </header>
+          </section>
           <section class="filters">
-            <!--потом убрать атрибут hidden-->
-            <h2 class="visually-hidden" hidden>Фильтры</h2>
+            <h2 class="visually-hidden">Фильтры</h2>
             <form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="get">
               <div class="catalog-filters-left">
                 <fieldset class="catalog-filters-group">
@@ -113,12 +112,16 @@
               <div class="catalog-filters-right">
                 <fieldset class="catalog-filters-group catalog-filters-slider">
                   <legend class="catalog-filters-title">Стоимость, ₽:</legend>
-                  <input type="number" class="range-slider-input" name="от" value="0">
-                  <input type="number" class="range-slider-input" name="до" value="9000">
+                  <div class="range-slider">
+                    <input type="number" class="range-slider-input" name="от" value="0">
+                    <input type="number" class="range-slider-input" name="до" value="9000">
+                  </div>
                 </fieldset>
                 <!--здесь слайдер-->
-                <button class="catalog-filters-submit-button button" type="submit">Применить</button>
-                <button class="catalog-filters-reset-button button" type="reset">Сбросить</button>
+                <div class="filters-buttons">
+                  <button class="catalog-filters-submit-button button" type="submit">Применить</button>
+                  <button class="catalog-filters-reset-button button" type="reset">Сбросить</button>
+                </div>
               </div>
             </form>
           </section>
@@ -164,7 +167,7 @@
               <b class="card-price">От 4000 ₽</b>
               <a class="card-button button" href="#">Подробнее</a>
               <button class="card-favorite button" type="submit">В избранное</button>
-              <span class="card-stars visually hidden">4 звезды</span>
+              <span class="card-stars">4 звезды</span>
               <span class="card-rating">Рейтинг: 8,5</span>
             </li>
             <li class="card">
@@ -179,7 +182,7 @@
               <b class="card-price">От 5000 ₽</b>
               <a class="card-button button" href="#">Подробнее</a>
               <button class="card-favorite button" type="submit">В избранное</button>
-              <span class="card-stars visually-hidden">4 звезды</span>
+              <span class="card-stars">4 звезды</span>
               <span class="card-rating">Рейтинг: 9,2</span>
             </li>
             <li class="card">
@@ -193,8 +196,8 @@
               <b class="card-price">От 2500 ₽</b>
               <a class="card-button button" href="#">Подробнее</a>
               <button class="card-favorite button" type="submit">В избранное</button>
-              <span class="card-stars visually-hidden">3 звезды</span>
-              <span class="card-rating visually-hidden">Рейтинг: 6,9</span>
+              <span class="card-stars">3 звезды</span>
+              <span class="card-rating">Рейтинг: 6,9</span>
             </li>
             <li class="card">
               <a class="card-link" href="#">
@@ -207,16 +210,11 @@
               <b class="card-price">От 1500 ₽</b>
               <a class="card-button button" href="#">Подробнее</a>
               <button class="card-favorite button" type="submit">В избранное</button>
-              <span class="card-stars visually-hidden">2 звезды</span>
+              <span class="card-stars">2 звезды</span>
               <span class="card-rating">Рейтинг: 5,0</span>
             </li>
           </ul>
           <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
             </li>
@@ -241,7 +239,6 @@
               </a>
             </li>
           </ul>
-          <button class="button pagination-show-more" type="button">Показать ещё</button>
         </section>
         <section class="subscription-catalog">
           <h2 class="subscription-catalog-title">Подпишитесь на рассылку</h2>
