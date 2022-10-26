@@ -63,7 +63,7 @@ header {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
+  color: #3F5E72;
   background-color: #ffffff;
 }
 
@@ -78,8 +78,6 @@ header {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  padding;
-  8px auto;
   margin: 0;
 }
 
@@ -333,7 +331,7 @@ header {
 
 .subscription {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #3F5E72;
   background-image: url("/images/sedona-background-image.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
