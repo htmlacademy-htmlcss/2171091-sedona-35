@@ -150,7 +150,7 @@ header {
 .hero-banner {
   color: #000000;
   background-color: #ffffff;
-  background-image: url("/images/index-background.jpg");
+  background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -332,7 +332,7 @@ header {
 .subscription {
   color: #ffffff;
   background-color: #3F5E72;
-  background-image: url("/images/sedona-background-image.jpg");
+  background-image: url("../images/sedona-background-image.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -417,8 +417,8 @@ header {
 }
 
 .filter-image {
-  background-color: #000000;
-  background-image: url("/images/catalog-background.jpg");
+  background-color: #3F5E72;
+  background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   color: #ffffff;
@@ -662,7 +662,7 @@ header {
 }
 
 .card-stars {
-  background-image: url(/images/star.svg);
+  background-image: url(../images/star.svg);
   background-repeat: repeat;
   box-sizing: border-box;
   width: 140px;
