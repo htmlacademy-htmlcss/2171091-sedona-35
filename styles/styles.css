@@ -713,9 +713,9 @@ header {
   color: #000000;
 }
 
-.pagination-item:nth-child(5) .pagination-link {
+.pagination-else {
   background-color: #ffffff;
-  color: #000000
+  color: #000000;
 }
 
 /* Секция с подпиской в каталоге */
