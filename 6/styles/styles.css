@@ -662,7 +662,7 @@ header {
 }
 
 .card-stars {
-  background-image: url(../images/star.svg);
+  background-image: url("../images/star.svg");
   background-repeat: repeat;
   box-sizing: border-box;
   width: 140px;
