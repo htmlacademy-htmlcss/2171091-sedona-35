@@ -44,7 +44,8 @@ body {
 }
 
 .page-container {
-  margin: 0 40px 0 40px;
+  margin: 0 auto;
+  padding: 0 40px 0 40px;
   width: 1200px;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
 }
@@ -103,6 +104,7 @@ header {
 .navigation-logo {
   width: 140px;
   margin-right: 28px;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -147,13 +149,21 @@ header {
 }
 
 .icon-favorite {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5px 5px 5px 4px;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 400;
   width: 20px;
   height: 20px;
-  background-image: url(../images/favorite.svg);
-  background-repeat: no-repeat;
+  line-height: 10px;
+  border-radius: 50%;
+  background-color: #6C9E42;
   position: relative;
-  left: -24px;
-  top: 10px;
+  top: -62px;
+  left: 22px;
+
 }
 
 .navigation-link-current {
@@ -179,6 +189,7 @@ header {
   padding-bottom: 8px;
   margin-top: 14px;
   margin-bottom: 14px;
+  margin-left: 20px;
 }
 
 .navigation-user-button:hover {
