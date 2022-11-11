@@ -205,52 +205,50 @@
                   name="date-of-leaving" value="1 сентября 2023" placeholder="Укажите дату" required>
               </div>
               <span class="modal-tip"> На эти даты есть свободные номера. Пока есть.</span>
-              <div class="modal-input-number-wrap">
-                <label class="modal-label modal-label-number" for="number-of-adults">Взрослые:</label>
-                <div class="inpute-number-wrap">
-                  <button class="inpute-number-button less-number"><span class="visually-hidden">Уменьшить
-                      количество</span><svg class="minus" width="21" height="20">
-                      <path d="M3.4 9v2h14V9h-14Z" />
+
+              <label class="modal-label modal-label-number" for="number-of-adults">Взрослые:</label>
+              <div class="inpute-number-wrap">
+                <button class="inpute-number-button less-number"><span class="visually-hidden">Уменьшить
+                    количество</span><svg class="minus" width="21" height="20">
+                    <path d="M3.4 9v2h14V9h-14Z" />
+                  </svg></button>
+                <input class="modal-input" type="number" min="0" max="100" step="1" id="number-of-adults"
+                  name="number-of-adults" value="2" required>
+                <button class="inpute-number-button more-number"><span class="visually-hidden">Увеличить
+                    количество</span><svg class="plus" width="20" height="20">
+                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                  </svg></button>
+              </div>
+              <label class="modal-label modal-label-number modal-label-number-with-tooltip"
+                for="number-of-children">Дети:
+                <span class="modal-tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"><svg class="tooltip-icon"
+                      width="2" height="12" viewBox="0 0 2 12">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" />
                     </svg></button>
-                  <input class="modal-input" type="number" min="0" max="100" step="1" id="number-of-adults"
-                    name="number-of-adults" value="2" required>
-                  <button class="inpute-number-button more-number"><span class="visually-hidden">Увеличить
-                      количество</span><svg class="plus" width="20" height="20">
-                      <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
-                    </svg></button>
-                </div>
-                <label class="modal-label modal-label-number modal-label-number-with-tooltip"
-                  for="number-of-children">Дети:
-                  <span class="modal-tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"><svg
-                        class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" />
-                      </svg></button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые
-                      будут
-                      с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                  </span>
-                </label>
-                <div class="inpute-number-wrap">
-                  <button class="inpute-number-button less-number"><span class="visually-hidden">Уменьшить
-                      количество</span><svg class="minus" width="21" height="20">
-                      <path d="M3.4 9v2h14V9h-14Z" />
-                    </svg></button>
-                  <input class="modal-input" type="number" min="0" max="100" step="1" id="number-of-children"
-                    name="number-of-children" value="2" required>
-                  <button class="inpute-number-button more-number"><span class="visually-hidden">Увеличить
-                      количество</span><svg class="plus" width="20" height="20">
-                      <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
-                    </svg></button>
-                </div>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые
+                    будут
+                    с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </label>
+              <div class="inpute-number-wrap inpute-number-wrap-right">
+                <button class="inpute-number-button less-number"><span class="visually-hidden">Уменьшить
+                    количество</span><svg class="minus" width="21" height="20">
+                    <path d="M3.4 9v2h14V9h-14Z" />
+                  </svg></button>
+                <input class="modal-input" type="number" min="0" max="100" step="1" id="number-of-children"
+                  name="number-of-children" value="2" required>
+                <button class="inpute-number-button more-number"><span class="visually-hidden">Увеличить
+                    количество</span><svg class="plus" width="20" height="20">
+                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                  </svg></button>
               </div>
               <input class="modal-button-submit button" type="submit" value="Найти">
             </form>
           </section>
         </div>
+        <!--модальное окно-->
       </div>
-      <!--модальное окно-->
-    </div>
   </body>
 
 </html>
