@@ -1451,6 +1451,7 @@ header {
   box-sizing: border-box;
   margin: 0;
   padding: 12px 20px;
+  text-align: start;
   background-color: #F2F2F2;
   border-radius: 4px;
   width: 440px;
@@ -1503,7 +1504,12 @@ header {
 }
 
 .modal-label-number-with-tooltip {
-  margin-right: 82px;
+  margin-right: 40px;
+  justify-self: end;
+}
+
+.inpute-number-wrap-right {
+  justify-self: end;
 }
 
 .modal-input[type="number"] {
@@ -1517,6 +1523,7 @@ header {
 
 .inpute-number-wrap {
   position: relative;
+  width: 110px;
 }
 
 .inpute-number-button {
@@ -1574,18 +1581,8 @@ header {
   color: #FF5757;
 }
 
-.modal-input-number-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  grid-column: 1 / 5;
-}
-
 .modal-tooltip {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  margin-top: 5px;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -1596,8 +1593,8 @@ header {
   background-color: #83B3D3;
   padding: 0;
   margin: 0;
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
 }
 
@@ -1643,9 +1640,10 @@ header {
 
 .modal-button-submit {
   background-color: #83B3D3;
+  border-radius: 10px;
   grid-column: 1 / 5;
-  grid-row: 6 / 7;
   margin-top: 48px;
+  padding: 18px;
 }
 
 .modal-button-submit:hover {
