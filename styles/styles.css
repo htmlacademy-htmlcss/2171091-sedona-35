@@ -1678,13 +1678,13 @@ header {
 
 .more-number {
   position: absolute;
-  right: 14px;
+  right: 10px;
   top: 14px;
 }
 
 .less-number {
   position: absolute;
-  left: 14px;
+  left: 10px;
   top: 14px;
 }
 
@@ -1730,6 +1730,7 @@ header {
 .modal-tooltip {
   margin-top: 11px;
   cursor: pointer;
+  position: relative;
 }
 
 .tooltip-toggle {
@@ -1760,8 +1761,8 @@ header {
   border-radius: 10px;
   width: 256px;
   position: absolute;
-  left: -118px;
-  top: 30px;
+  left: -115px;
+  top: 40px;
   display: none;
   z-index: 2;
 }
