@@ -66,7 +66,7 @@ header {
   line-height: 24px;
   color: #3F5E72;
   background-color: #ffffff;
-  max-height: 64px;
+  position: relative;
 }
 
 /* Все кнопки на макете */
@@ -92,15 +92,16 @@ header {
 .navigation {
   display: flex;
   flex-wrap: wrap;
-  width: 892px;
   justify-content: space-between;
-  margin: 0;
+  margin-left: 168px;
   padding: 0;
+  width: 892px
 }
 
 .navigation-logo {
+  position: absolute;
   width: 140px;
-  margin-right: 28px;
+  margin: 0;
   z-index: 1;
   left: 70px;
 }
@@ -116,16 +117,17 @@ header {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  max-width: 50%;
+  width: 492px;
 }
 
 .navigation-user-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  padding: 0 0 0 0;
   list-style-type: none;
-  justify-content: flex-start;
-  max-width: 40%;
+  justify-content: flex-end;
+  width: 400px;
 }
 
 .navigation-link {
@@ -138,19 +140,23 @@ header {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
-  padding: 20px 16px;
+  padding: 20px 16px 20px 16px;
+  margin: 0;
 }
 
-.navigation-link:hover, .navigation-user-link:hover {
+.navigation-link:hover,
+.navigation-user-link:hover {
   opacity: 30%;
 }
 
-.navigation-link:focus, .navigation-user-link:focus {
+.navigation-link:focus,
+.navigation-user-link:focus {
   outline: none;
   opacity: 30%;
 }
 
-.navigation-link:active, .navigation-user-link:active {
+.navigation-link:active,
+.navigation-user-link:active {
   opacity: 60%;
 }
 
@@ -158,13 +164,18 @@ header {
   display: block;
   box-sizing: border-box;
   width: 44px;
-  padding: 22px 12px 22px 12px;
+  padding: 22px 12px 14px 12px;
+}
+
+.navigation-favorite {
+  position: relative;
+  margin-right: 21px;
 }
 
 .icon-favorite {
   box-sizing: border-box;
   text-align: center;
-  padding: 4px 5px 4px 5px;
+  padding: 5px 5px 5px 4px;
   color: #FFFFFF;
   font-size: 10px;
   font-weight: 400;
@@ -173,9 +184,9 @@ header {
   line-height: 10px;
   border-radius: 50%;
   background-color: #6C9E42;
-  position: relative;
-  top: -62px;
-  left: 19px;
+  position: absolute;
+  top: 12px;
+  right: 2px;
 }
 
 .navigation-link-current {
@@ -200,9 +211,8 @@ header {
   width: 160px;
   padding-top: 8px;
   padding-bottom: 8px;
-  margin-top: 14px;
-  margin-bottom: 14px;
-  margin-left: 20px;
+  margin: 14px 0 14px 0;
+  max-width: 160px;
 }
 
 .navigation-user-button:hover {
@@ -552,7 +562,6 @@ header {
   background-color: #82B3D3;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  overflow: hidden;
 }
 
 .subscription-input:focus {
@@ -644,6 +653,7 @@ header {
 .phone-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
+
 .copyright {
   padding-top: 6px;
 }
@@ -701,7 +711,7 @@ header {
   justify-content: space-between;
   border: 0;
   padding: 0;
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .catalog-filters-right {
@@ -892,6 +902,8 @@ header {
   margin: 0;
   max-width: 143px;
   max-height: 48px;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .range-slider-input-right {
@@ -906,13 +918,8 @@ header {
   margin: 0;
   max-width: 143px;
   max-height: 48px;
-}
-
-.range-slider-input-right::-webkit-outer-spin-button,
-.range-slider-input-right::-webkit-inner-spin-button,
-.range-slider-input-left::-webkit-outer-spin-button,
-.range-slider-input-left::-webkit-inner-spin-button {
-  display: none;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .range-slider-input-left:focus,
@@ -1106,11 +1113,10 @@ header {
   border-radius: 4px;
   padding: 0 40px 0 20px;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   background-image: url(../images/select-arrow.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: #ffffff;
 }
 
 .select-control:hover {
@@ -1172,7 +1178,8 @@ header {
   border: 2px solid #68A2CA;
 }
 
-.view-list-link:active, .view-list-link-checked {
+.view-list-link:active,
+.view-list-link-checked {
   border: 2px solid #000000;
 }
 
@@ -1181,7 +1188,7 @@ header {
 .catalog-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 18px;
   list-style-type: none;
   margin: 0;
   padding: 0 70px 40px 70px;
@@ -1205,6 +1212,7 @@ header {
   padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .card-link-image {
@@ -1284,9 +1292,9 @@ header {
   justify-self: start;
   background-color: #756157;
   box-sizing: border-box;
-  width: 140px;
   padding: 8px 20px 8px 20px;
   border: none;
+  width: 140px;
 }
 
 .card-button:hover {
@@ -1305,13 +1313,12 @@ header {
 
 .card-favorite {
   grid-column: 2 / 3;
-  grid-row: 4 / 5;
   justify-self: end;
   background-color: #82B3D3;
   border: none;
   box-sizing: border-box;
-  width: 140px;
   padding: 8px 18px 8px 18px;
+  width: 140px;
 
 }
 
@@ -1354,20 +1361,21 @@ header {
   background-image: url("../images/star.svg");
   background-repeat: space;
   width: 140px;
-  margin: 10px 10px 10px 0;
+  height: 17px;
   box-sizing: border-box;
+  margin: 10px 0;
 }
 
 .stars-4 {
-  max-width: 50%;
+  width: 59%;
 }
 
 .stars-3 {
-  max-width: 40%;
+  width: 44%;
 }
 
 .stars-2 {
-  max-width: 30%;
+  width: 26%;
 }
 
 .card-rating {
@@ -1473,7 +1481,7 @@ header {
 .subscription-catalog {
   text-align: center;
   margin: 0;
-  padding: 92px 258px 104px;
+  padding: 94px 258px 102px;
 }
 
 .subscription-catalog-title {
@@ -1501,6 +1509,7 @@ header {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
 }
 
 .modal {
@@ -1643,6 +1652,8 @@ header {
   text-align: center;
   padding: 14px 0 14px 0;
   margin: 0;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .modal-input[type="number"]:focus {
@@ -1681,7 +1692,8 @@ header {
 .plus {
   width: 100%;
   height: 100%;
-  fill: rgba(117, 97, 87, 0.3)
+  fill: rgba(117, 97, 87, 0.3);
+  background-color: #F2F2F2;
 }
 
 .minus:hover,
@@ -1752,7 +1764,7 @@ header {
   left: -118px;
   top: 30px;
   display: none;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tooltip-toggle:hover + .tooltip-text,

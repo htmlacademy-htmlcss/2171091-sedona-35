@@ -5,18 +5,18 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
-
   <body>
     <div class="page-container">
       <header class="header">
-        <a class="navigation-logo" href="index.html">
+        <a class="navigation-logo">
           <img class="header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип Седоны">
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+              <a class="navigation-link navigation-link-current">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -36,7 +36,7 @@
                 </svg>
               </a>
             </li>
-            <li class="navigation-user-item">
+            <li class="navigation-user-item navigation-favorite">
               <a class="navigation-user-link" href="#">
                 <span class="visually-hidden">Избранное.</span>
                 <svg class="icon-heart" width="20" height="20" viewBox="0 0 20 20">
@@ -89,7 +89,6 @@
               <!--первый подписок конец-->
             </li>
             <li class="advantages-item">
-
               <img class="advantages-picture" src="images/bridge-of-devil.jpg" width="800" height="384"
                 alt="Фото моста дьявола">
               <div class="advantages-container">
@@ -187,9 +186,9 @@
         </div>
       </footer>
       <!--модальное окно-->
-      <div class="modal-container modal-container-close">
+      <div class="visually-hidden modal-container modal-container-close">
         <div class="modal">
-          <button type="button" class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть.</span>
             <svg width="21" height="20">
               <path
@@ -214,13 +213,12 @@
 
               <label class="modal-label modal-label-number" for="number-of-adults">Взрослые:</label>
               <div class="inpute-number-wrap">
-                <button type="button" class="inpute-number-button less-number"><span class="visually-hidden">Уменьшить
+                <button class="inpute-number-button less-number" type="button"><span class="visually-hidden">Уменьшить
                     количество.</span><svg class="minus" width="21" height="20">
                     <path d="M3.4 9v2h14V9h-14Z" />
                   </svg></button>
-                <input class="modal-input" type="number" min="0" max="100" step="1" id="number-of-adults"
-                  name="number-of-adults" value="2" required>
-                <button type="button" class="inpute-number-button more-number"><span class="visually-hidden">Увеличить
+                <input class="modal-input" type="number" id="number-of-adults" name="number-of-adults" min="0" max="100" step="1" value="2" required>
+                <button class="inpute-number-button more-number" type="button"><span class="visually-hidden">Увеличить
                     количество.</span><svg class="plus" width="20" height="20">
                     <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg></button>
@@ -228,7 +226,7 @@
               <label class="modal-label modal-label-number modal-label-number-with-tooltip"
                 for="number-of-children">Дети:
                 <span class="modal-tooltip">
-                  <button type="button" class="tooltip-toggle" aria-labelledby="tooltip-label"><svg class="tooltip-icon"
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"><svg class="tooltip-icon"
                       width="2" height="12" viewBox="0 0 2 12">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" />
                     </svg></button>
@@ -238,13 +236,12 @@
                 </span>
               </label>
               <div class="inpute-number-wrap inpute-number-wrap-right">
-                <button type="button" class="inpute-number-button less-number"><span class="visually-hidden">Уменьшить
+                <button class="inpute-number-button less-number" type="button"><span class="visually-hidden">Уменьшить
                     количество.</span><svg class="minus" width="21" height="20">
                     <path d="M3.4 9v2h14V9h-14Z" />
                   </svg></button>
-                <input class="modal-input" type="number" min="0" max="100" step="1" id="number-of-children"
-                  name="number-of-children" value="2" required>
-                <button type="button" class="inpute-number-button more-number"><span class="visually-hidden">Увеличить
+                <input class="modal-input" type="number" id="number-of-children" name="number-of-children" min="0" max="100" step="1" value="2" required>
+                <button class="inpute-number-button more-number" type="button"><span class="visually-hidden">Увеличить
                     количество.</span><svg class="plus" width="20" height="20">
                     <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg></button>

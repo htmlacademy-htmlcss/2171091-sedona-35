@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Sedona</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
-
   <body>
     <div class="page-container">
       <header class="header">
@@ -22,7 +22,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user-list">
@@ -36,7 +36,7 @@
                 </svg>
               </a>
             </li>
-            <li class="navigation-user-item">
+            <li class="navigation-user-item navigation-favorite">
               <a class="navigation-user-link" href="#">
                 <span class="visually-hidden">Избранное.</span>
                 <svg class="icon-heart" width="20" height="20" viewBox="0 0 20 20">
@@ -129,20 +129,21 @@
                     </li>
                   </ul>
                 </fieldset>
+
               </div>
               <div class="catalog-filters-right">
                 <fieldset class="catalog-filters-group">
                   <legend class="catalog-filters-title">Стоимость, ₽:</legend>
                   <div class="range-slider">
-                    <div class="range-slider-container-left"><input type="number" class="range-slider-input-left"
+                    <div class="range-slider-container-left"><input class="range-slider-input-left" type="number"
                         name="от" value="0"></div>
-                    <div class="range-slider-container-right"><input type="number" class="range-slider-input-right"
+                    <div class="range-slider-container-right"><input class="range-slider-input-right" type="number"
                         name="до" value="9000"></div>
                     <div class="range-scale">
-                      <div class="range-bar" style="right: 62px; width: 226px"><button type="button" class="range-toggle toggle-min">
+                      <div class="range-bar" style="right: 62px; width: 226px"><button class="range-toggle toggle-min" type="button">
                           <span class="visually-hidden">Изменить минимальную цену.</span>
                         </button>
-                        <button type="button" class="range-toggle toggle-max">
+                        <button class="range-toggle toggle-max" type="button">
                           <span class="visually-hidden">Изменить максимальную цену.</span>
                         </button>
                       </div>
