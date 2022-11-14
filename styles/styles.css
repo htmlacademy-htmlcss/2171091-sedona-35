@@ -1633,12 +1633,12 @@ header {
 }
 
 .modal-label-number {
-  margin-right: 40px;
+  margin-right: 10px;
 }
 
-.modal-label-number-with-tooltip {
-  margin-right: 40px;
+.wrap-label-tooltip {
   justify-self: end;
+  display: flex;
 }
 
 .inpute-number-wrap-right {
@@ -1728,8 +1728,7 @@ header {
 }
 
 .modal-tooltip {
-  position: absolute;
-  margin-left: 10px;
+  margin-top: 11px;
   cursor: pointer;
 }
 
