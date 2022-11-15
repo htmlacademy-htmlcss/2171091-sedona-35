@@ -87,7 +87,7 @@ header {
   border-radius: 4px;
 }
 
-/* Нвигация в шапке */
+/* Навигация в шапке */
 
 .navigation {
   display: flex;
@@ -108,6 +108,11 @@ header {
 
 .navigation-logo:focus {
   outline: none;
+  opacity: 30%;
+}
+
+.navigation-logo:active {
+  opacity: 30%;
 }
 
 .navigation-list {
@@ -562,6 +567,7 @@ header {
   background-color: #82B3D3;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  cursor: pointer;
 }
 
 .subscription-input:focus {
@@ -619,18 +625,16 @@ header {
   height: 100%;
 }
 
-.social-image:hover {
+.social-link:hover > .social-image,
+.social-link:focus > .social-image {
   fill: #68A2CA;
 }
 
-.social-item:focus,
-.social-link:focus,
-.social-image:focus {
-  fill: #68A2CA;
-  outline: none;
+.social-link:focus {
+  outline: none
 }
 
-.social-image:active {
+.social-link:active > .social-image {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -663,21 +667,20 @@ header {
   fill: #000000;
 }
 
-.copyright-image:hover {
+.copyright-link:hover > .copyright-image,
+.copyright-link:focus > .copyright-image {
   fill: #756157;
 }
 
-.copyright-image:focus,
 .copyright-link:focus {
-  fill: #756157;
   outline: none;
 }
 
-.copyright:active {
+.copyright-link:active > .copyright-image {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-/* див с шапкой каталога и фильтрами */
+/* контейнер с шапкой каталога и фильтрами */
 
 .catalog-filters {
   display: flex;
@@ -737,6 +740,7 @@ header {
   position: relative;
   display: block;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -906,6 +910,14 @@ header {
   -moz-appearance: textfield;
 }
 
+.range-slider-input-left::-webkit-outer-spin-button,
+.range-slider-input-left::-webkit-inner-spin-button,
+.range-slider-input-right::-webkit-outer-spin-button,
+.range-slider-input-right::-webkit-inner-spin-button {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
 .range-slider-input-right {
   border: none;
   box-sizing: border-box;
@@ -1023,7 +1035,7 @@ header {
   width: 191px;
   margin-bottom: 30px;
   max-width: 191px;
-
+  cursor: pointer;
 }
 
 .catalog-filters-submit-button:hover {
@@ -1046,6 +1058,7 @@ header {
   padding: 8px 50px;
   width: 191px;
   max-width: 191px;
+  cursor: pointer;
 }
 
 .catalog-filters-reset-button:hover {
@@ -1117,6 +1130,7 @@ header {
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .select-control:hover {
@@ -1319,7 +1333,7 @@ header {
   box-sizing: border-box;
   padding: 8px 18px 8px 18px;
   width: 140px;
-
+  cursor: pointer;
 }
 
 .card-favorite:hover {
@@ -1621,7 +1635,7 @@ header {
 }
 
 .modal-input-text-wrap::after {
-  content: '';
+  content: "";
   background-image: url(../images/date.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1774,7 +1788,7 @@ header {
 }
 
 .tooltip-text:before {
-  content: '';
+  content: "";
   background-image: url("../images/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
@@ -1814,5 +1828,9 @@ header {
 
 .modal-input[type="number"]::-webkit-outer-spin-button,
 .modal-input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.modal-container-close {
   display: none;
 }
