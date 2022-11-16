@@ -710,7 +710,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-  padding: 35px 70px 73px 70px;
+  padding: 35px 70px 70px 70px;
   margin: 0;
 }
 
@@ -718,6 +718,11 @@ body {
   margin: 0 70px 0 0;
   border: 0;
   padding: 0;
+  max-width: 160px;
+}
+
+.catalog-filters-group-pricerange {
+  max-width: 288px;
 }
 
 .catalog-filters-left .catalog-filters-group:last-child {
@@ -895,6 +900,11 @@ body {
   line-height: 24px;
   padding: 0;
   margin: 0 0 32px 0;
+  max-width: 160px;
+}
+
+.catalog-filters-title-pricerange {
+  max-width: 288px;
 }
 
 .catalog-filters-list {
@@ -1055,8 +1065,7 @@ body {
   border: none;
   padding: 8px 50px;
   width: 191px;
-  margin-bottom: 30px;
-  max-width: 191px;
+  margin-top: 56px;
   cursor: pointer;
 }
 
@@ -1078,8 +1087,8 @@ body {
   background-color: transparent;
   border: none;
   padding: 8px 50px;
+  margin-top: 32px;
   width: 191px;
-  max-width: 191px;
   cursor: pointer;
 }
 
@@ -1099,7 +1108,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 /* Результат поиска */
