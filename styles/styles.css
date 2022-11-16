@@ -29,6 +29,7 @@ body {
   line-height: 26px;
   color: #333333;
   background-color: #ffffff;
+  word-wrap: break-word;
 }
 
 .visually-hidden {
@@ -54,7 +55,7 @@ body {
 
 /* Шапка */
 
-header {
+.header {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -174,7 +175,6 @@ header {
 
 .navigation-favorite {
   position: relative;
-  margin-right: 21px;
 }
 
 .icon-favorite {
@@ -218,6 +218,7 @@ header {
   padding-bottom: 8px;
   margin: 14px 0 14px 0;
   max-width: 160px;
+  margin-left: 21px;
 }
 
 .navigation-user-button:hover {
@@ -243,14 +244,14 @@ header {
 .hero-banner {
   position: relative;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #a1c7e0;
   background-image: url("../images/index-background.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 100%;
 }
 
 .hero-banner::before {
-  background-image: url(../images/hero-decoration-white.svg);
+  background-image: url("../images/hero-decoration-white.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100%;
@@ -323,6 +324,7 @@ header {
   max-width: 1200px;
   margin: 0;
   padding: 0;
+  background-color: #82B3D3;
 }
 
 .advantages-title {
@@ -352,10 +354,15 @@ header {
   margin-top: 0;
 }
 
+.advantages-picture {
+  align-self: center;
+}
+
 .sub-advantages-list {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -406,6 +413,7 @@ header {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -604,10 +612,13 @@ header {
   padding: 45px 70px;
 }
 
+.social {
+  max-width: 300px;
+}
+
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 300px;
   list-style: none;
   justify-content: space-between;
   padding: 0;
@@ -638,6 +649,10 @@ header {
   fill: rgba(104, 162, 202, 0.3);
 }
 
+.phone {
+  max-width: 600px;
+}
+
 .phone-link {
   color: #000000;
   font-size: 40px;
@@ -660,6 +675,7 @@ header {
 
 .copyright {
   padding-top: 6px;
+  max-width: 200px;
 }
 
 .copyright-image {
@@ -754,7 +770,7 @@ header {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url(../images/checked.svg);
+  background-image: url("../images/checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   content: "";
@@ -839,9 +855,15 @@ header {
   fill: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link:focus {
+.breadcrumbs-catalog-link:focus {
   color: #ffffff;
   fill: #ffffff;
+  outline: none;
+}
+
+.breadcrumbs-home-link:focus {
+  color: rgba(255, 255, 255, 0.6);
+  fill: rgba(255, 255, 255, 0.6);
   outline: none;
 }
 
@@ -853,7 +875,7 @@ header {
 .breadcrumbs-item::after {
   position: absolute;
   display: block;
-  background-image: url(../images/arrow.svg);
+  background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   top: 0;
   right: -17px;
@@ -1126,7 +1148,7 @@ header {
   border-radius: 4px;
   padding: 0 40px 0 20px;
   appearance: none;
-  background-image: url(../images/select-arrow.svg);
+  background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-color: #ffffff;
@@ -1170,7 +1192,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  margin: 0 0 0 0;
+  margin: 0;
   border: 2px solid #E5E5E5;
   height: 48px;
   width: 48px;
@@ -1180,7 +1202,7 @@ header {
 .view-list-image {
   fill: #000000;
   margin: 0 auto;
-  padding: 17px 16px 17px 16px;
+  padding: 15px 14px;
 }
 
 .view-list-link:hover {
@@ -1223,6 +1245,7 @@ header {
   display: grid;
   row-gap: 16px;
   justify-content: space-between;
+  align-items: start;
   padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
@@ -1286,18 +1309,22 @@ header {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   justify-self: start;
+  text-align: start;
   font-size: 18px;
   line-height: 21px;
   margin: 0;
+  padding-right: 5px;
 }
 
 .card-price {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   justify-self: end;
+  text-align: end;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  padding-left: 5px;
 }
 
 .card-button {
@@ -1406,7 +1433,6 @@ header {
   padding: 9px 22px 8px 23px;
   border: none;
   border-radius: 4px;
-  ;
 }
 
 /* Пагинация */
@@ -1584,7 +1610,7 @@ header {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  padding: 12px 0;
+  padding: 12px 10px 0 0;
 }
 
 .modal-label-date-of-arrival,
@@ -1636,7 +1662,7 @@ header {
 
 .modal-input-text-wrap::after {
   content: "";
-  background-image: url(../images/date.svg);
+  background-image: url("../images/date.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 20px;
@@ -1647,7 +1673,7 @@ header {
 }
 
 .modal-label-number {
-  margin-right: 10px;
+  max-width: 137px;
 }
 
 .wrap-label-tooltip {
@@ -1745,6 +1771,7 @@ header {
   margin-top: 11px;
   cursor: pointer;
   position: relative;
+  max-width: 30px;
 }
 
 .tooltip-toggle {
@@ -1828,7 +1855,8 @@ header {
 
 .modal-input[type="number"]::-webkit-outer-spin-button,
 .modal-input[type="number"]::-webkit-inner-spin-button {
-  display: none;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .modal-container-close {
