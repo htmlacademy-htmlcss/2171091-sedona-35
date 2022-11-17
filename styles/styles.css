@@ -246,8 +246,8 @@ body {
   color: #000000;
   background-color: #a1c7e0;
   background-image: url("../images/index-background.jpg");
-  background-repeat: repeat;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-banner::before {
